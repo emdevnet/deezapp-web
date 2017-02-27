@@ -1,0 +1,17 @@
+<div class="thumbnail">
+	<img ng-src="{{deeztrack.track.album.cover_big}}" alt="{{deeztrack.track.album.title}}">
+	<div class="caption">
+		<h3>{{deeztrack.track.title}}</h3>
+		<p>{{deeztrack.track.artist.name}} / {{deeztrack.track.album.title}}</p>
+		<p>
+			<a class="btn btn-primary" ng-click="deeztrack.togglePlay()">
+				<i class="glyphicon glyphicon-{{deeztrack.playState}}"></i>
+				{{deeztrack.playState | capitalize}}
+			</a>
+			<a class="btn btn-success">
+				<i class="glyphicon glyphicon-star"></i>
+				Favorite
+			</a>
+		</p>
+	</div>
+</div>

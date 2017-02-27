@@ -1,0 +1,19 @@
+<section class="search">
+
+	<h1>Rechercher une musique</h1>
+	<hr>
+
+	<form class="form-inline" ng-submit="search.searchTracks()">
+		<div class="form-group">
+			<input type="search" name="search" ng-model="search.query" placeholder="Rechercher sur Deezer..." class="form-control">
+		</div>
+		
+		<input type="submit" class="btn btn-primary" value="Rechercher !">
+	</form>
+
+	<hr>
+
+	<div class="row is-flex">
+		<deez-track ng-repeat="track in search.tracksList" track="track" class="col-md-3"></deez-track>
+	</div>
+</div>

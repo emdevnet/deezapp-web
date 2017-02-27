@@ -1,0 +1,17 @@
+{
+  "name": "deezapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "angular-ui-router": "^0.4.2",
+    "bootstrap": "^3.3.7",
+    "ngstorage": "^0.3.11"
+  },
+  "devDependencies": {}
+}
